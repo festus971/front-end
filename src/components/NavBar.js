@@ -19,14 +19,13 @@ function NavBar(){
                     About
                 </NavLink>
 
-                <NavLink to="/ourRooms" style={navLinks}>
+                <NavLink to="/booking" style={navLinks}>
                     Booking
                 </NavLink>
 
-                <NavLink to="/restaurant" style={navLinks}>
+                <NavLink to="/cars" style={navLinks}>
                     Car
-                </NavLink>
-                
+                </NavLink>     
         </div>
     )
 }
