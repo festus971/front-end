@@ -16,7 +16,7 @@ console.log(cars)
 
     return (
         <div>
-            <h1>{
+            <h2>{
             cars.map((car) => ( 
             <ol key = { car.id } >
                 name: { car.name }, 
@@ -24,7 +24,7 @@ console.log(cars)
                 price: { car.price } 
                 </ol>
             ))
-        }</h1>
+        }</h2>
         
         </div>
     )
