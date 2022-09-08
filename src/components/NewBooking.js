@@ -24,6 +24,7 @@ export const NewBooking = ({onAddBooking}) => {
             setFormData({...formData,name:"",country:"",price:""})
           })
       }
+
       return (
         <div>
         <form className="form" onSubmit={handleSubmit}>

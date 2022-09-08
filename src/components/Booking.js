@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from "react";
 import { NewBooking } from "./NewBooking";
+import { Delete } from "./Delete";
 
 function Booking() {
 const [cars, setCars] = useState([])
@@ -16,19 +17,31 @@ console.log(cars)
 function onAddBooking(newCars){
     setCars([...cars, newCars])
 }
+function handleDelete(deletedCars){
+    const updatedCars = cars.filter((car) => car.id !== deletedCars.id )
+    setCars(updatedCars)
+
+}
+
 
     return (
         <div>
-            <h2>{
+            {/* {
             cars.map((car) => ( 
             <ol key = { car.id } >
-                name: { car.name }, 
-                country: { car.country }, 
-                price: { car.price } 
+                <h3>{ car.name }</h3> 
+                <p>{ car.country }</p>
+                <p>{ car.price }</p> 
                 </ol>
             ))
-        }</h2>
+        } */}
+        <ul className="cars">
+        {cars.map((car) => (
+          <Delete id={car.id} key={car.id} car={car}  onDelete={handleDelete} />
+        ))}
+      </ul>
         <NewBooking onAddBooking = { onAddBooking}/>
+        {/* <button onClick={()=>DeleteBooking(cars)}>Delete Booking</button> */}
         </div>
     )
     
