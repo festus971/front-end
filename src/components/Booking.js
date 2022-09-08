@@ -1,18 +1,21 @@
 import React,{useEffect, useState} from "react";
+import { NewBooking } from "./NewBooking";
 
 function Booking() {
-const [cars, setcars] =useState([])
+const [cars, setCars] = useState([])
+
 
 useEffect (()=>{
     fetch("http://localhost:9292/owners")
     .then((res)=>res.json())
     .then((json) =>
-    setcars(json))
+    setCars(json))
 },[])
 console.log(cars)
 
-
-
+function onAddBooking(newCars){
+    setCars([...cars, newCars])
+}
 
     return (
         <div>
@@ -25,7 +28,7 @@ console.log(cars)
                 </ol>
             ))
         }</h2>
-        
+        <NewBooking onAddBooking = { onAddBooking}/>
         </div>
     )
     
