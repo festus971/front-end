@@ -1,6 +1,13 @@
+
 .App {
   text-align: center;
 }
+/* .body{
+  background: url("../cars.jpeg");
+  background-size: cover;
+  font-family: sans-serif;
+  color:aliceblue;
+} */
 
 .App-logo {
   height: 40vmin;

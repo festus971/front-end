@@ -24,12 +24,16 @@ function handleDelete(deletedCars){
 }
     return (
         <div>
-        <ul className="divide-y divide-gray-200">
+        <div className="flex justify-center h-600 w-800 mt-12">
+        <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-gray-300 shadow-lg">
+        <ul class="list-inside ...">
         {cars.map((car) => (
           <Delete id={car.id} key={car.id} car={car}  onDelete={handleDelete} />
         ))}
       </ul>
         <NewBooking onAddBooking = { onAddBooking}/>
+        </div>
+        </div>
         </div>
     )
     

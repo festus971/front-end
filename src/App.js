@@ -11,7 +11,7 @@ import React from 'react';
 function App() {
   return (
     <div className="text-3xl font-bold underline">
-     
+     <div className='body'>
         <Router>
     
       <NavBar />
@@ -23,6 +23,7 @@ function App() {
         </Routes>
       </Router>
     
+    </div>
     </div>
   );
 }

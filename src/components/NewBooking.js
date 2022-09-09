@@ -28,10 +28,10 @@ export const NewBooking = ({onAddBooking}) => {
       return (
         <div>
         <form className="form" onSubmit={handleSubmit}>
-          <input onChange={handleChange} value={formData.name} name="name" placeholder="Name" />
-          <input onChange={handleChange} value={formData.country} name="country" placeholder="Country" />
-          <input onChange={handleChange} value={formData.price} name="price"  placeholder="Price" />
-        <button type='submit'>Submit</button>
+          <input class="flex-auto text-lg font-semibold text-slate-900"onChange={handleChange} value={formData.name} name="name" placeholder="Name" />
+          <input class="text-sm text-slate-700" onChange={handleChange} value={formData.country} name="country" placeholder="Country" />
+          <input class="text-sm text-slate-700" onChange={handleChange} value={formData.price} name="price"  placeholder="Price" />
+        <button class="h-10 px-6 font-semibold rounded-md bg-black text-white"type='submit'>Submit</button>
         </form>
         </div>
       )
