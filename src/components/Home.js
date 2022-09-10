@@ -8,7 +8,7 @@ function Home() {
         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
           <blockquote>
             <p class="text-lg font-medium">
-              “CarHire Development Trust is seeking qualified suppliers to provide their best carhire price quote for the cars available.”
+              “CarHire Development Trust is a qualified supplier that provide their best carhire price quote for the cars available.”
             </p>
           </blockquote>
           <figcaption class="font-medium">
