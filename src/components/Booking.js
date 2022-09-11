@@ -8,7 +8,7 @@ const [cars, setCars] = useState([])
 
 
 useEffect (()=>{
-    fetch("http://localhost:9292/owners")
+    fetch("https://magari-backend-apps.herokuapp.com/owners")
     .then((res)=>res.json())
     .then((json) =>
     setCars(json))
