@@ -11,7 +11,7 @@ export const NewBooking = ({onAddBooking}) => {
       }
       function handleSubmit(event) {
         event.preventDefault();
-        fetch("http://localhost:9292/owners",{
+        fetch("https://magari-backend-apps.herokuapp.com/owners",{
           method: "POST",
           headers: {
           "Content-Type":"application/json",
