@@ -3,7 +3,7 @@ import React from 'react'
 export const Delete = ({onDelete, car}) => {
 
     function handleDeleteClick() {
-        fetch(`http://localhost:9292/owners/${car.id}`, {
+        fetch(`https://magari-backend-apps.herokuapp.com/owners/${car.id}`, {
           method: "DELETE",
         })
           .then((resp) => resp.json())
